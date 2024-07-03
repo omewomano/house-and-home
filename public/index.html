@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <style>
+     /* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+    </style>
+    
+</head>
+<body class="bg-red-200">
+    <div class="container mx-auto bg-white">
+        <!--TopBar Begins-->
+        <section>
+            <nav class="bg-white border-gray-200 bg-green-850">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+                <!--search Bar-->
+                    <form class="flex items-center max-w-sm px-12">   
+                        <label for="simple-search" class="sr-only">Search</label>
+                        <div class="relative w-full">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg>
+                            </div>
+                            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Search ...." required />
+                        </div>
+                    </form>
+                <!--Search Bar end-->
+                <div class="hidden w-full md:block md:w-auto" id="navbar">
+                    <ul class="flex flex-col font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Start LayBy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Get Credit</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Find A Store</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Sign in</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+  
+        </section>
+        <!--TopBar ends-->
+
+
+        <!--Header Begins-->
+        <section>
+            <nav class="bg-white">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 ">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse max-w-xl">
+                        <img src="Assets/House-and-Home-Logo.png" class="h-auto max-w-md" alt="House & home logo" />
+                    </a>
+                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto col-span-4 " id="navbar-default">
+                        <ul class="flex flex-col font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Product</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Shop By Brand</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Fridges</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Bed</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Stove</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Dining</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Lounge</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Solar</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-green-850 rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Catalog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+        </section>
+        <!--Header Begins-->
+
+
+        <!--Carousel and Description Section-->
+        <section>
+            <div class="grid grid-cols-3">
+
+                <!--Carousel div-->
+                <div class="col-span-2">  
+                    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden md:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                <div
+                                    class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                                    <h5 class="text-xl">Third slide label</h5>
+                                    <p>
+                                    Some representative placeholder content for the third slide.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>                
+                </div>
+                <!--Carousel div ends-->
+                <!--Carousel Description-->
+                <div class="col-span-1 bg-red-500">
+                    Description Section
+                </div>
+                <!--Carousel Description ends-->
+            </div>
+        </section>
+        <!--Carousel and description section ends-->
+
+
+        <!--Product Description Section-->
+        <section class="bg-green-850">
+            <ul class="text-white text-2xl grid grid-cols-4 p-5">
+                <li  class="col-span-1 font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="M180-233v53-600 547Zm0 113q-24.75 0-42.37-17.63Q120-155.25 120-180v-600q0-24.75 17.63-42.38Q155.25-840 180-840h600q24.75 0 42.38 17.62Q840-804.75 840-780v134h-60v-134H180v600h600v-133h60v133q0 24.75-17.62 42.37Q804.75-120 780-120H180Zm358-173q-30.52 0-52.26-21.44Q464-335.89 464-366v-227q0-30.11 21.74-51.56Q507.48-666 538-666h270q30.53 0 52.26 21.44Q882-623.11 882-593v227q0 30.11-21.74 51.56Q838.53-293 808-293H538Zm284-60v-253H524v253h298Zm-169.76-63q26.76 0 45.26-18.96Q716-453.92 716-481q0-26.25-19-44.63Q678-544 652-544t-45 18.37q-19 18.38-19 44.63 0 27.08 18.74 46.04Q625.47-416 652.24-416Z"/></svg>             
+                    <a href="#" class="me-4 hover:underline md:me-6 ">LOWEST PRICES<br>Guaranteed</a>
+                </li>
+            
+                <li  class="col-span-1 font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="M626-533q22.5 0 38.25-15.75T680-587q0-22.5-15.75-38.25T626-641q-22.5 0-38.25 15.75T572-587q0 22.5 15.75 38.25T626-533Zm-292 0q22.5 0 38.25-15.75T388-587q0-22.5-15.75-38.25T334-641q-22.5 0-38.25 15.75T280-587q0 22.5 15.75 38.25T334-533Zm146 272q66 0 121.5-35.5T682-393h-52q-23 40-63 61.5T480.5-310q-46.5 0-87-21T331-393h-53q26 61 81 96.5T480-261Zm0 181q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 340q142.38 0 241.19-98.81Q820-337.63 820-480q0-142.38-98.81-241.19T480-820q-142.37 0-241.19 98.81Q140-622.38 140-480q0 142.37 98.81 241.19Q337.63-140 480-140Z"/></svg>                      
+                    <span href="#" class="me-4 hover:underline md:me-6">HIGH-QUALITY<br>Products</span>
+                </li>
+                <li  class="col-span-1 font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="M350-634h260v-93q0-57-37.5-95T480-860q-55 0-92.5 38T350-727v93ZM557-80H220q-23 0-41.5-18.5T160-140v-434q0-23 18.5-41.5T220-634h70v-93q0-81 55-137t135-56q80 0 135 56t55 137v93h70q23 0 41.5 18.5T800-574v87q-13-3-27-4t-33-1v-82H220v434h301q7 17 15 30.5T557-80Zm196 34q-79 0-136-57t-57-136q0-79 57-136t136-57q79 0 136 57t57 136q0 79-57 136T753-46Zm74-92 27-27-84-76v-124h-42v135.78L827-138ZM220-574v434-434Z"/></svg>                 
+                    <a href="#" class="me-4 hover:underline md:me-6 ">LAY By Up to<br>9 Months</a>
+                </li>
+                <li  class="col-span-1 font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00000"><path d="M180-233v53-600 547Zm0 113q-24.75 0-42.37-17.63Q120-155.25 120-180v-600q0-24.75 17.63-42.38Q155.25-840 180-840h600q24.75 0 42.38 17.62Q840-804.75 840-780v134h-60v-134H180v600h600v-133h60v133q0 24.75-17.62 42.37Q804.75-120 780-120H180Zm358-173q-30.52 0-52.26-21.44Q464-335.89 464-366v-227q0-30.11 21.74-51.56Q507.48-666 538-666h270q30.53 0 52.26 21.44Q882-623.11 882-593v227q0 30.11-21.74 51.56Q838.53-293 808-293H538Zm284-60v-253H524v253h298Zm-169.76-63q26.76 0 45.26-18.96Q716-453.92 716-481q0-26.25-19-44.63Q678-544 652-544t-45 18.37q-19 18.38-19 44.63 0 27.08 18.74 46.04Q625.47-416 652.24-416Z"/></svg>                     
+                    <a href="#" class="me-4 hover:underline md:me-6 ">ZERO DEPOSIT <br> Purchases for <br>Civil Servants</a>
+                </li>
+            </ul>
+        </section>
+        <!--Product Description Section-->
+
+
+        <!--Trending Products Section-->
+        <section >
+            <div class="grid grid-cols-12 bg-white mt-5">
+                <div class="col-span-3" >
+                    <h3 class="text-4xl mt-40 mb-20 text-green-850 text-center">
+                        Trending  <br>Products
+                    </h3>
+                </div>
+
+
+                <!--trending Products slider Section-->
+                <div class="col-span-9">
+                    <div class="relative  flex-col items-center justify-center col-span-10">
+                        <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl  md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 1-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 1 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 2-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending-product2.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$339.00</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 2 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 3-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/trnding-product3.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Cadac 7kg Gas Cylinder</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$67.00</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 3 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 4-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending-product2.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 4 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 5-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 5 end-->
+                        </div>
+                        </div>
+                        
+                        <div>
+                        </div>
+                    </div>     
+                </div>                 
+                <!--trending Products Slider Section ends-->
+            </div>
+        </section>
+        <!--Trending Products Section ends-->
+
+
+        <!--hot deals section-->
+        <section>
+            <div class="grid grid-cols-12 bg-gray-300 mt-5">
+                <div class="col-span-3" >
+                    <h3 class="text-4xl mt-40 mb-20 text-green-850 text-center">
+                        Hot Deals
+                    </h3>
+                </div>
+
+                <!--hot Deals slider Section-->
+                <div class="col-span-9">
+                    <div class="relative  flex-col items-center justify-center col-span-10">
+                        <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl  md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 1-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/dining-set.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Mekaz 9 Piece Dining Room Suite</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$1100.00</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 1 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 2-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/wardrobe.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Zambesi 3-Door Wardrobe</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$205.00</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 2 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 3-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/washing machine.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri Wasing Machine</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$145.00</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 3 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 4-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/wardrobe.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Mekaz 9 Piece Dining Room</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 4 end-->
+                        </div>
+                    
+                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
+                            <!--item 5-->
+                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                <a href="#">
+                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending.png" alt="product image" />
+                                </a>
+                                <div class="px-5 mt-1">
+                                    <div class="text-center">
+                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
+                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
+                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--item 5 end-->
+                        </div>
+                        </div>
+                        
+                        <div>
+                        </div>
+                    </div>     
+                </div>                 
+                <!--hot Deals Slider Section ends-->
+
+            </div>
+        </section>
+
+        <!--hot deal section ends-->
+
+        <!--Brands Section-->
+        <section>
+            <div class=" bg-white mt-6 mb-6">
+                <h1 class="text-green-850 text-4xl font-bold text-center">“A lifestyle worth living” brands</h1>
+                <div class="grid grid-cols-6 mt-6 pb-6">
+                    <img src="Assets/brand1.png" alt="">
+                    <img src="Assets/brand2.png" alt="">
+                    <img src="Assets/brand3.png" alt="">
+                    <img src="Assets/brand4.png" alt="">
+                    <img src="Assets/brand5.png" alt="">
+                    <img src="Assets/brand6.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--Brands Section-->
+
+
+        <!--footer-->
+        <section>
+            <div class="grid grid-cols-5 bg-green-850 text-white pt-6 pb-6">
+
+                <!--Online store-->
+                <div class="ml-4">
+                   <h2 class="mb-2 text-lg font-semibold">ONLINE STORE</h2>
+                    <ul class="list-none list-inside">
+                        <li>
+                            <a href="#">Fridges & Freezers</a>
+                        </li>
+                        <li>
+                            <a href="#">Beds</a>
+                        </li>
+                        <li>
+                            <a href="#">Stoves</a>
+                        </li>
+                        <li>
+                            <a href="#">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#">Lounge</a>
+                        </li>
+                        <li>
+                            <a href="#">Kitchen</a>
+                        </li>
+                        <li>
+                            <a href="#">Solar</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy on Lay By</a>
+                        </li>
+                        <li>
+                            <a href="#"> Zero Deposit Purchase</a>
+                        </li>
+                        <li>
+                            <a href="#">Request for a Qoutation</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Online store ends-->
+                <!--Customer Service-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">CUSTOMER SERVICE</h2>
+                     <ul class="list-none list-inside ">
+                         <li>
+                             <a href="#">FAQ</a>
+                         </li>
+                         <li>
+                             <a href="#">Catalog</a>
+                         </li>
+                         <li>
+                             <a href="#">Deliveries</a>
+                         </li>
+                         
+                     </ul>
+                 </div>
+                <!--Customer Service ends-->
+
+                <!--policies-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">POLICIES</h2>
+                     <ul class="list-none list-inside ">
+                         <li>
+                             <a href="#">Credit T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">LayBy T&cs</a>
+                         </li>
+                         <li>
+                             <a href="#"> Returns T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">Repairs T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">Deliveries T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">General T&Cs</a>
+                         </li>
+                     </ul>
+                 </div>
+                <!--policies ends-->
+
+                <!--other links-->
+                <div class=" col-span-2 mr-4">
+                    <h2 class="mb-2 text-lg font-semibold">
+                        Sign up to our newsletter for updates 
+                        <br> on promotions and new products:
+                    </h2>
+
+                    <div class="ml-0 pl-0">
+                        <!--search Bar-->
+                        <form class="flex items-center max-w-sm ">   
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                                </div>
+                                <input type="text" id="simple-search" class="bg-white border border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Email Address" required />
+                            </div>
+                        </form>
+                    <!--Search Bar end-->
+                    </div>
+                    <h2 class="mb-2 text-lg font-semibold mt-5">Follow us on Social Media</h2>
+                    
+                    <div class="grid grid-cols-12">
+                        <a href="#"><img class="p-1" src="Assets/facebook.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/instagram.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/linkedin.png" alt=""></a>
+                    </div>
+
+                    <h2 class="mb-2 text-lg font-semibold mt-5">WE ACCEPT:</h2>
+                    <div class="grid grid-cols-3">
+                        <a href="#"><img  src="Assets/visa.png" alt=""></a>
+                        <a href="#"><img class="pt-4" src="Assets/Mastercard.png" alt=""></a>
+                        <a href="#"><img class="pt-7" src="Assets/innnbucks.png" alt=""></a>
+                    </div>
+                    <div class="grid grid-cols-2 ">
+                        <a href="#"><img src="Assets/ecocash.png" alt=""></a>
+                        <a href="#"><img src="Assets/zipit.png" alt=""></a>
+                    </div>
+                    
+                 </div>
+                <!--other links ends-->
+
+            </div>
+        </section>
+
+        <!--footer ends-->
+
+
+
+
+    </div>    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+<script>
+    const container = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel > div');
+const dots = document.querySelectorAll('.pagination > span');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+const breakpoint = 768;
+const slidesPerPage = 3;
+const totalSlidesCount = slides.length;
+// Mobile stuff
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Previous
+prevBtn.addEventListener('click', () => {
+  container.scrollBy({ left: -slides[0].offsetWidth, behavior: 'smooth' });
+  const centerSlideIndex = getCenterSlideIndex() - 1;
+  updateActiveDot(centerSlideIndex);
+});
+
+// Next
+nextBtn.addEventListener('click', () => {
+  container.scrollBy({ left: slides[0].offsetWidth, behavior: 'smooth' });
+  const centerSlideIndex = getCenterSlideIndex() + 1;
+  updateActiveDot(centerSlideIndex);
+});
+
+// Mobile
+container.addEventListener('touchstart', (event) => {
+  touchStartX = event.touches[0].clientX;
+});
+
+container.addEventListener('touchmove', (event) => {
+  touchEndX = event.touches[0].clientX;
+});
+
+container.addEventListener('touchend', () => {
+  let centerSlideIndex;
+  const swipeThreshold = 50;
+  
+  if (touchStartX - touchEndX > swipeThreshold) {
+    centerSlideIndex = getCenterSlideIndex() + 1;
+  } else {
+    centerSlideIndex = getCenterSlideIndex() - 1;
+  }
+  
+  updateActiveDot(centerSlideIndex);
+  touchStartX = 0;
+  touchEndX = 0;
+  
+});
+
+// Misc functions
+function updateActiveDot(centerSlideIndex) {
+  const isMobileView = container.offsetWidth <= breakpoint;
+  const dotsCount = isMobileView ? dots.length : dots.length - 2;
+  const slidesCount = isMobileView ? 1 : dotsCount - slidesPerPage;
+  const pageIndex = centerSlideIndex - slidesCount;
+  if (pageIndex >= 0 && pageIndex < dotsCount) {
+    dots.forEach((dot) => dot.classList.remove('w-8'));
+    dots[pageIndex].classList.add('w-8');
+  }
+}
+
+function getCenterSlideIndex() {
+  const slideWidth = slides[0].offsetWidth;
+  const containerWidth = container.offsetWidth;
+  const centerSlideIndex = Math.round((container.scrollLeft + Math.floor(containerWidth / 2)) / slideWidth);
+  return centerSlideIndex;
+}
+</script>
+    
+</html>

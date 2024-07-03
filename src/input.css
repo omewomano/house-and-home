@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-green-850{
+    background-color: #009674;
+}
+.text-green-850{
+    color: #009674;
+}
+

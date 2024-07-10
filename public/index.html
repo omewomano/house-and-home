@@ -7,6 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+     <!--=============== SWIPER CSS ===============-->
+     <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css">
+
+     <!--=============== CSS ===============-->
+     <link rel="stylesheet" href="Assets/css/styles.css">
+    
     <style>
      /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
@@ -19,101 +25,116 @@
     scrollbar-width: none;  /* Firefox */
 }
     </style>
+
+    <style>
+      .swiper-wrapper {
+      width: 100%;
+      height: max-content !important;
+      padding-bottom: 64px !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+      }
+      .swiper-pagination-bullet {
+      background: #4f46e5;
+      }
+    </style>
+    <style>
+        /* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     
 </head>
-<body class="bg-red-200">
-    <div class="container mx-auto bg-white">
+<body>
+    
         <!--TopBar Begins-->
         <section>
-            <nav class="bg-white border-gray-200 bg-green-850">
+            <nav class="bg-green-850 border-b border-b-gray-400">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse flex-none w-60">
+                        <img src="Assets/House-and-Home-Logo.png" class="h-32" alt="house and home Logo" />
+                    </a>
 
-                <!--search Bar-->
-                    <form class="flex items-center max-w-sm px-12">   
-                        <label for="simple-search" class="sr-only">Search</label>
-                        <div class="relative w-full">
-                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                                </svg>
+                    <div class="flex-none w-96">      
+                        <div class="relative hidden md:block ">
+                            <div class="absolute inset-y-0 end-0 flex items-center ps-3 pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                            <span class="sr-only">Search icon</span>
                             </div>
-                            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Search ...." required />
+                            <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-800 rounded-md bg-gray-50" placeholder="What product are you looking for?">
                         </div>
-                    </form>
-                <!--Search Bar end-->
-                <div class="hidden w-full md:block md:w-auto" id="navbar">
-                    <ul class="flex flex-col font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
-                    <li>
-                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Start LayBy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Get Credit</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Find A Store</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Sign in</a>
-                    </li>
+                    </div>
+
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        <li>
+                        <a href="#" class="block py-2 px-3 text-white md:bg-transparent md:p-0 " aria-current="page">Login / Signup</a>
+                        </li>
                     </ul>
-                </div>
+
+                    <div class="">      
+                        <div class="relative hidden md:block ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00000"><path d="M284.53-80.67q-30.86 0-52.7-21.97Q210-124.62 210-155.47q0-30.86 21.98-52.7Q253.95-230 284.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83Zm400 0q-30.86 0-52.7-21.97Q610-124.62 610-155.47q0-30.86 21.98-52.7Q653.95-230 684.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83ZM238.67-734 344-515.33h285.33l120-218.67H238.67ZM206-800.67h589.38q22.98 0 34.97 20.84 11.98 20.83.32 41.83L693.33-490.67q-11 19.34-28.87 30.67-17.87 11.33-39.13 11.33H324l-52 96h487.33V-286H278q-43 0-63-31.83-20-31.84-.33-68.17l60.66-111.33-149.33-316H47.33V-880h121.34L206-800.67Zm138 285.34h285.33H344Z"/></svg>
+                                <span class="sr-only">Cart</span>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </nav>
-  
-        </section>
         <!--TopBar ends-->
 
 
         <!--Header Begins-->
         <section>
-            <nav class="bg-white">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 ">
-                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse max-w-xl">
-                        <img src="Assets/House-and-Home-Logo.png" class="h-auto max-w-md" alt="House & home logo" />
-                    </a>
-                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <nav class="bg-green-850">
+                <div class="pl-9 pr-6 pt-6 pb-6">                    
+                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-default" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                         </svg>
                     </button>
-                    <div class="hidden w-full md:block md:w-auto col-span-4 " id="navbar-default">
-                        <ul class="flex flex-col font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                    <div class="w-full md:block md:w-auto" id="navbar-default">
+                        <ul class="flex flex-wrap items-center justify-between mx-auto font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
                             <li>
-                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Product</a>
+                                <a href="#" class="block py-2 px-3 text-white rounded  md:border-0 md:hover:text-red-500 md:p-0 ">Product</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Shop</a>
+                                <a href="#" class="block py-2 px-3 text-white rounded  md:border-0 md:hover:text-red-500 md:p-0 ">Shop</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Shop By Brand</a>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Shop By Brand</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Fridges</a>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Fridges</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 px-3 text-black rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 ">Bed</a>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Bed</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Stove</a>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Stove</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Dining</a>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Dining</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Lounge</a>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Lounge</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 ppx-3 text-black rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Solar</a>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Solar</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 ppx-3 text-green-850 rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 ">Catalog</a>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Catalog</a>
                             </li>
                         </ul>
                     </div>
@@ -128,36 +149,60 @@
             <div class="grid grid-cols-3">
 
                 <!--Carousel div-->
-                <div class="col-span-2">  
+                <div class="col-span-3">  
                     <div id="default-carousel" class="relative w-full" data-carousel="slide">
                         <!-- Carousel wrapper -->
                         <div class="relative h-56 overflow-hidden md:h-96">
                             <!-- Item 1 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                                <div
-                                    class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                                    <h5 class="text-xl">Third slide label</h5>
-                                    <p>
-                                    Some representative placeholder content for the third slide.
-                                    </p>
+                                <div class="absolute inset-y-0 right-0 w-4/12 text-center text-white md:block bg-red-500/90 p-10 pt-20">
+                                    <h5 class="text-3xl">first slide; <br> Some representative placeholder content for the slide.</h5>
+                                    <button type="button" class="text-white bg-green-850 focus:ring-4 focus:outline-none drop-shadow-2xl font-medium rounded-full text-sm px-7 py-2.5 mt-9 text-center inline-flex items-center shadow-lg shadow-gray-950/50">
+                                        Add to Cart
+                                    </button>
                                 </div>
                             </div>
                             <!-- Item 2 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                <div class="absolute inset-y-0 right-0 w-4/12 text-center text-white md:block bg-red-500/90 p-10 pt-20">
+                                    <h5 class="text-3xl">second slide; <br> Some representative placeholder content for the slide.</h5>
+                                    <button type="button" class="text-white bg-green-850 focus:ring-4 focus:outline-none rounded-full font-medium text-sm px-7 py-2.5 mt-9 text-center inline-flex items-center shadow-lg shadow-gray-950/50">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                
                             </div>
                             <!-- Item 3 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                <div class="absolute inset-y-0 right-0 w-4/12 text-center text-white md:block bg-red-500/90 p-10 pt-20">
+                                    <h5 class="text-3xl">Third slide; <br> Some representative placeholder content for the slide.</h5>
+                                    <button type="button" class="text-white bg-green-850 focus:ring-4 focus:outline-none  font-medium rounded-full text-sm px-7 py-2.5 mt-9 text-center inline-flex items-center shadow-lg shadow-gray-950/50">
+                                        Add to Cart
+                                    </button>
+                                </div>
                             </div>
                             <!-- Item 4 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                <div class="absolute inset-y-0 right-0 w-4/12 text-center text-white md:block bg-red-500/90 p-10 pt-20">
+                                    <h5 class="text-3xl">fourth slide; <br> Some representative placeholder content for the slide.</h5>
+                                    <button type="button" class="text-white bg-green-850 focus:ring-4 focus:outline-none  font-medium rounded-full text-sm px-7 py-2.5 mt-9 text-center inline-flex items-center shadow-lg shadow-gray-950/50">
+                                        Add to Cart
+                                    </button>
+                                </div>
                             </div>
                             <!-- Item 5 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <img src="Assets/Carousel-img.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                <div class="absolute inset-y-0 right-0 w-4/12 text-center text-white md:block bg-red-500/90 p-10 pt-20">
+                                    <h5 class="text-3xl">fifth slide; <br> Some representative placeholder content for the slide.</h5>
+                                    <button type="button" class="text-white rounded-full bg-green-850 focus:ring-4 focus:outline-none  font-medium  text-sm px-7 py-2.5 mt-9 text-center inline-flex items-center shadow-lg shadow-gray-950/50 ">
+                                        Add to Cart
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <!-- Slider indicators -->
@@ -188,11 +233,6 @@
                     </div>                
                 </div>
                 <!--Carousel div ends-->
-                <!--Carousel Description-->
-                <div class="col-span-1 bg-red-500">
-                    Description Section
-                </div>
-                <!--Carousel Description ends-->
             </div>
         </section>
         <!--Carousel and description section ends-->
@@ -225,118 +265,122 @@
 
         <!--Trending Products Section-->
         <section >
-            <div class="grid grid-cols-12 bg-white mt-5">
-                <div class="col-span-3" >
-                    <h3 class="text-4xl mt-40 mb-20 text-green-850 text-center">
-                        Trending  <br>Products
+            <div class="bg-white mt-5">
+                <div class="col-span-12" >
+                    <h3 class="text-4xl mb-6 text-green-850 text-center">
+                        Trending Products
                     </h3>
                 </div>
 
 
                 <!--trending Products slider Section-->
-                <div class="col-span-9">
-                    <div class="relative  flex-col items-center justify-center col-span-10">
-                        <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl  md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 1-->
-                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                <section class="">
+                    <div class="swiper col-span-12">
+                       <div class="card__content">
+                          <div class="swiper-wrapper">
+                             <article class="card__article swiper-slide">
+                                <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                    <a href="#">
+                                        <img class="p-1 pl-8 rounded-t-lg" src="Assets/wardrobe.png" alt="product image" />
+                                    </a>
+                                    <div class="px-5 mt-1">
+                                        <div class="text-left">
+                                            <h5 class="pt-2 text- font-bold tracking-tight text-gray-900">Zambesi 3-Door Wardrobe</h5>
+                                            <p class="text-xl font-bold mb-3 text-green-850 pt-3">$205.00</p>
+                                            <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
+                                                Add to Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                             </article>
+                 
+                             <article class="card__article swiper-slide">
+                                <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                    <a href="#">
+                                        <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending-product2.png" alt="product image" />
+                                    </a>
+                                    <div class="px-5 mt-1">
+                                        <div class="text-left">
+                                            <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
+                                            <p class="text-xl font-bold mb-3 text-green-850 pt-3">$339.00</p>
+                                            <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
+                                                Add to Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                             </article>
+                 
+                             <article class="card__article swiper-slide">
+                                <!--item 3-->
+                                <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                    <a href="#">
+                                        <img class="p-1 pl-8 rounded-t-lg" src="Assets/trnding-product3.png" alt="product image" />
+                                    </a>
+                                    <div class="px-5 mt-1">
+                                        <div class="text-left">
+                                            <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Cadac 7kg Gas Cylinder</h5>
+                                            <p class="text-xl font-bold mb-3 text-green-850 pt-3">$67.00</p>
+                                            <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
+                                                Add to Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--item 3 end-->
+                             </article>
+                 
+                             <article class="card__article swiper-slide">
+                                <!--item 4-->
+                                <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
+                                    <a href="#">
+                                        <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending-product2.png" alt="product image" />
+                                    </a>
+                                    <div class="px-5 mt-1">
+                                        <div class="text-left">
+                                            <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
+                                            <p class="text-xl font-bold mb-3 text-green-850 pt-3">$699</p>
+                                            <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
+                                                Add to Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--item 4 end-->
+                             </article>
+           
+                             <article class="card__article swiper-slide">
+                               <!--item 5-->
+                               <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
                                 <a href="#">
                                     <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending.png" alt="product image" />
                                 </a>
                                 <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                            Add to Cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--item 1 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 2-->
-                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
-                                <a href="#">
-                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending-product2.png" alt="product image" />
-                                </a>
-                                <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$339.00</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                            Add to Cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--item 2 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 3-->
-                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
-                                <a href="#">
-                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/trnding-product3.png" alt="product image" />
-                                </a>
-                                <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Cadac 7kg Gas Cylinder</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$67.00</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                            Add to Cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--item 3 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 4-->
-                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
-                                <a href="#">
-                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending-product2.png" alt="product image" />
-                                </a>
-                                <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                            Add to Cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--item 4 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 5-->
-                            <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
-                                <a href="#">
-                                    <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending.png" alt="product image" />
-                                </a>
-                                <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <div class="text-left">
+                                        <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
+                                        <p class="text-xl font-bold mb-3 text-green-850 pt-3">$599</p>
+                                        <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
                                             Add to Cart
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <!--item 5 end-->
-                        </div>
-                        </div>
-                        
-                        <div>
-                        </div>
-                    </div>     
-                </div>                 
+                             </article>
+                          </div>
+                       </div>
+           
+                       <!-- Navigation buttons -->
+                       <div class="swiper-button-next mr-5 text-green-850">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#009674"><path d="m309.67-81.33-61-61.67L587-481.33 248.67-819.67l61-61.66 400 400-400 400Z"/></svg>
+                       </div>
+        
+                       <div class="swiper-button-prev ml-10 text-green-850">                
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#009674"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                       </div>
+                    </div>
+                 </section>             
                 <!--trending Products Slider Section ends-->
             </div>
         </section>
@@ -345,117 +389,128 @@
 
         <!--hot deals section-->
         <section>
-            <div class="grid grid-cols-12 bg-gray-300 mt-5">
-                <div class="col-span-3" >
-                    <h3 class="text-4xl mt-40 mb-20 text-green-850 text-center">
-                        Hot Deals
+            <div class="grid grid-cols-12 bg-gray-300 mt-5 pt-7">
+                <div class="col-span-12" >
+                    <h3 class="text-4xl mb-6 text-green-850 text-center">
+                        Trending Products
                     </h3>
                 </div>
 
                 <!--hot Deals slider Section-->
-                <div class="col-span-9">
-                    <div class="relative  flex-col items-center justify-center col-span-10">
-                        <div class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth">
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl  md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 1-->
+                 
+                <!--Hot Deals Slider section-->  
+                <section class="col-span-12">
+                    <div class="swiper col-span-12">
+                       <div class="card__content">
+                          <div class="swiper-wrapper">
+                             <article class="card__article swiper-slide">
+                        <!--item 1-->
                             <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
                                 <a href="#">
                                     <img class="p-1 pl-8 rounded-t-lg" src="Assets/dining-set.png" alt="product image" />
                                 </a>
                                 <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Mekaz 9 Piece Dining Room Suite</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$1100.00</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <div class="text-left">
+                                        <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Mekaz 9 Piece Dining set</h5>
+                                        <p class="text-xl font-bold mb-3 text-green-850 pt-3">$1100.00</p>
+                                        <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
                                             Add to Cart
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <!--item 1 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 2-->
+                        <!--item 1 end-->
+                             </article>
+                 
+                             <article class="card__article swiper-slide">
+                        <!--item 2-->
                             <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
                                 <a href="#">
                                     <img class="p-1 pl-8 rounded-t-lg" src="Assets/wardrobe.png" alt="product image" />
                                 </a>
                                 <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Zambesi 3-Door Wardrobe</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$205.00</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <div class="text-left">
+                                        <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Zambesi 3-Door Wardrobe</h5>
+                                        <p class="text-xl font-bold mb-3 text-green-850 pt-3">$205.00</p>
+                                        <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
                                             Add to Cart
                                         </a>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <!--item 2 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 3-->
+                        <!--item 2 end-->
+                             </article>
+                 
+                             <article class="card__article swiper-slide">
+                          <!--item 3-->
                             <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
                                 <a href="#">
                                     <img class="p-1 pl-8 rounded-t-lg" src="Assets/washing machine.png" alt="product image" />
                                 </a>
                                 <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri Wasing Machine</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$145.00</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <div class="text-left">
+                                        <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri Wasing Machine</h5>
+                                        <p class="text-xl font-bold mb-3 text-green-850 pt-3">$145.00</p>
+                                        <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
                                             Add to Cart
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <!--item 3 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 4-->
+                        <!--item 3 end-->
+                             </article>
+                 
+                             <article class="card__article swiper-slide">
+                                <!--item 4-->
                             <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
                                 <a href="#">
                                     <img class="p-1 pl-8 rounded-t-lg" src="Assets/wardrobe.png" alt="product image" />
                                 </a>
                                 <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Mekaz 9 Piece Dining Room</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <div class="text-left">
+                                        <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Mekaz 9 Piece Dining set</h5>
+                                        <p class="text-xl font-bold mb-3 text-green-850 pt-3">$599</p>
+                                        <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
                                             Add to Cart
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <!--item 4 end-->
-                        </div>
-                    
-                        <div class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl md:w-[calc(33.33%-(32px/3))]">
-                            <!--item 5-->
+                        <!--item 4 end-->
+                             </article>
+           
+                             <article class="card__article swiper-slide">
+                        <!--item 5-->
                             <div class="w-full max-w-sm col-span-1 mt-3 mb-3">
                                 <a href="#">
                                     <img class="p-1 pl-8 rounded-t-lg" src="Assets/Trending.png" alt="product image" />
                                 </a>
                                 <div class="px-5 mt-1">
-                                    <div class="text-center">
-                                        <h5 class="pt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
-                                        <p class="text-2xl font-bold mb-3 text-gray-900">$599</p>
-                                        <a href="#" class="text-white mt-9 bg-green-850 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                    <div class="text-left">
+                                        <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri 50X50 Gas Stove 4 Plate</h5>
+                                        <p class="text-xl font-bold mb-3 text-green-850 pt-3">$599</p>
+                                        <a href="#" class="text-green-850 mt-9 border-green-850 font-medium rounded-lg text-sm px-5 py-2.5 text-center col-span-12 block w-full">
                                             Add to Cart
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <!--item 5 end-->
-                        </div>
-                        </div>
-                        
-                        <div>
-                        </div>
-                    </div>     
-                </div>                 
+                        <!--item 5 end-->
+                             </article>
+                          </div>
+                       </div>
+           
+                       <!-- Navigation buttons -->
+                       <div class="swiper-button-next mr-5 text-green-850">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#009674"><path d="m309.67-81.33-61-61.67L587-481.33 248.67-819.67l61-61.66 400 400-400 400Z"/></svg>
+                       </div>
+        
+                       <div class="swiper-button-prev ml-10 text-green-850">                
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#009674"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                       </div>
+                    </div>
+                 </section>                
                 <!--hot Deals Slider Section ends-->
 
             </div>
@@ -465,9 +520,9 @@
 
         <!--Brands Section-->
         <section>
-            <div class=" bg-white mt-6 mb-6">
+            <div class=" bg-white mt-6 mb-6 mx-4">
                 <h1 class="text-green-850 text-4xl font-bold text-center">“A lifestyle worth living” brands</h1>
-                <div class="grid grid-cols-6 mt-6 pb-6">
+                <div class="grid grid-cols-6 mt-6 pb-6 ml-6">
                     <img src="Assets/brand1.png" alt="">
                     <img src="Assets/brand2.png" alt="">
                     <img src="Assets/brand3.png" alt="">
@@ -614,84 +669,12 @@
         </section>
 
         <!--footer ends-->
-
-
-
-
     </div>    
 </body>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-<script>
-    const container = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.carousel > div');
-const dots = document.querySelectorAll('.pagination > span');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+<!--=============== SWIPER JS ===============-->
+<script src="Assets/js/swiper-bundle.min.js"></script>
 
-const breakpoint = 768;
-const slidesPerPage = 3;
-const totalSlidesCount = slides.length;
-// Mobile stuff
-let touchStartX = 0;
-let touchEndX = 0;
-
-// Previous
-prevBtn.addEventListener('click', () => {
-  container.scrollBy({ left: -slides[0].offsetWidth, behavior: 'smooth' });
-  const centerSlideIndex = getCenterSlideIndex() - 1;
-  updateActiveDot(centerSlideIndex);
-});
-
-// Next
-nextBtn.addEventListener('click', () => {
-  container.scrollBy({ left: slides[0].offsetWidth, behavior: 'smooth' });
-  const centerSlideIndex = getCenterSlideIndex() + 1;
-  updateActiveDot(centerSlideIndex);
-});
-
-// Mobile
-container.addEventListener('touchstart', (event) => {
-  touchStartX = event.touches[0].clientX;
-});
-
-container.addEventListener('touchmove', (event) => {
-  touchEndX = event.touches[0].clientX;
-});
-
-container.addEventListener('touchend', () => {
-  let centerSlideIndex;
-  const swipeThreshold = 50;
-  
-  if (touchStartX - touchEndX > swipeThreshold) {
-    centerSlideIndex = getCenterSlideIndex() + 1;
-  } else {
-    centerSlideIndex = getCenterSlideIndex() - 1;
-  }
-  
-  updateActiveDot(centerSlideIndex);
-  touchStartX = 0;
-  touchEndX = 0;
-  
-});
-
-// Misc functions
-function updateActiveDot(centerSlideIndex) {
-  const isMobileView = container.offsetWidth <= breakpoint;
-  const dotsCount = isMobileView ? dots.length : dots.length - 2;
-  const slidesCount = isMobileView ? 1 : dotsCount - slidesPerPage;
-  const pageIndex = centerSlideIndex - slidesCount;
-  if (pageIndex >= 0 && pageIndex < dotsCount) {
-    dots.forEach((dot) => dot.classList.remove('w-8'));
-    dots[pageIndex].classList.add('w-8');
-  }
-}
-
-function getCenterSlideIndex() {
-  const slideWidth = slides[0].offsetWidth;
-  const containerWidth = container.offsetWidth;
-  const centerSlideIndex = Math.round((container.scrollLeft + Math.floor(containerWidth / 2)) / slideWidth);
-  return centerSlideIndex;
-}
-</script>
-    
+<!--=============== MAIN JS ===============-->
+<script src="Assets/js/main.js"></script>
+   
 </html>

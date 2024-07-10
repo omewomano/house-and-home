@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+        <!--TopBar Begins-->
+        <section>
+            <nav class="bg-green-850 border-b border-b-gray-400">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse flex-none w-60">
+                        <img src="Assets/House-and-Home-Logo.png" class="h-32" alt="house and home Logo" />
+                    </a>
+
+                    <div class="flex-none w-96">      
+                        <div class="relative hidden md:block ">
+                            <div class="absolute inset-y-0 end-0 flex items-center ps-3 pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                            <span class="sr-only">Search icon</span>
+                            </div>
+                            <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-800 rounded-md bg-gray-50" placeholder="What product are you looking for?">
+                        </div>
+                    </div>
+
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        <li>
+                        <a href="#" class="block py-2 px-3 text-white md:bg-transparent md:p-0 " aria-current="page">Login / Signup</a>
+                        </li>
+                    </ul>
+
+                    <div class="">      
+                        <div class="relative hidden md:block ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00000"><path d="M284.53-80.67q-30.86 0-52.7-21.97Q210-124.62 210-155.47q0-30.86 21.98-52.7Q253.95-230 284.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83Zm400 0q-30.86 0-52.7-21.97Q610-124.62 610-155.47q0-30.86 21.98-52.7Q653.95-230 684.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83ZM238.67-734 344-515.33h285.33l120-218.67H238.67ZM206-800.67h589.38q22.98 0 34.97 20.84 11.98 20.83.32 41.83L693.33-490.67q-11 19.34-28.87 30.67-17.87 11.33-39.13 11.33H324l-52 96h487.33V-286H278q-43 0-63-31.83-20-31.84-.33-68.17l60.66-111.33-149.33-316H47.33V-880h121.34L206-800.67Zm138 285.34h285.33H344Z"/></svg>
+                                <span class="sr-only">Cart</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        <!--TopBar ends-->
+
+
+        <!--Header Begins-->
+        <section>
+            <nav class="bg-green-850">
+                <div class="pl-9 pr-6 pt-6 pb-6">                    
+                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                    <div class="w-full md:block md:w-auto" id="navbar-default">
+                        <ul class="flex flex-wrap items-center justify-between mx-auto font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded  md:border-0 md:hover:text-red-500 md:p-0 ">Product</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded  md:border-0 md:hover:text-red-500 md:p-0 ">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Shop By Brand</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Fridges</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Bed</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Stove</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Dining</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Lounge</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Solar</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Catalog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+        </section>
+        <!--Header Begins-->
+
+        <!--Item Images, Description & Price Section-->
+        <section class="grid grid-cols-10 pt-10">
+            <div class="col-span-5">              
+                <div class="grid grid-cols-5 pl-5">
+                    <div class="mb-4 col-span-1">
+                        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" data-tabs-active-classes="border border-green-850">
+                            <li class="me-2" role="presentation">
+                                <img src="Assets/side-view.png" class="inline-block p-4" id="front-tab" data-tabs-target="#frontSide" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            </li>
+                            <li class="me-2" role="presentation">
+                                <img src="Assets/side-view.png" class="inline-block p-4" id="leftSide-tab" data-tabs-target="#leftSide" type="button" role="tab" aria-controls="leftSide-tab" aria-selected="false">
+                            </li>
+                            <li class="me-2" role="presentation">
+                                <img src="Assets/side-view.png" class="inline-block p-4" id="rightSide-tab" data-tabs-target="#rightSide" type="button" role="tab" aria-controls="rightSide" aria-selected="false">
+                            </li>
+                            <li role="presentation">
+                                <img src="Assets/side-view.png" class="inline-block p-4" id="topSide-tab" data-tabs-target="#topSide" type="button" role="tab" aria-controls="topSide" aria-selected="false">
+                            </li>
+                            <li role="presentation">
+                                <img src="Assets/side-view.png" class="inline-block p-4" id="backSide-tab" data-tabs-target="#backSide" type="button" role="tab" aria-controls="backsideSide" aria-selected="false">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="default-tab-content" class=" col-span-4 ">
+                        <div class="hidden p-4 rounded-lg " id="frontSide" role="tabpanel" aria-labelledby="frontSide-tab">
+                            <img src="Assets/item-img-lg.png " class="max-w-full pt-24 pl-7" alt="">
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="leftSide" role="tabpanel" aria-labelledby="leftSide-tab">
+                            <img src="Assets/item-img-lg.png " class="max-w-full pt-24 pl-7" alt="">
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="rightSide" role="tabpanel" aria-labelledby="rightSide-tab">
+                            <img src="Assets/item-img-lg.png " class="max-w-full pt-24 pl-7" alt="">
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="topSide" role="tabpanel" aria-labelledby="topSide-tab">
+                            <img src="Assets/item-img-lg.png " class="max-w-full pt-24 pl-7" alt="">
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="backSide" role="tabpanel" aria-labelledby="backSide-tab">
+                            <img src="Assets/item-img-lg.png " class="max-w-full pt-24 pl-7" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-span-5 pl-6">
+                <h2 class="text-3xl">Capri 30x39 cooling freezer</h2>
+                <p class="text-sm pr-3">
+                    Haier Thermocool 100L Chest Freezer - Up To 50% Energy Saving Silver there the nig dk m jnklnhkvjkk 
+                    Thermocool 100L Chest Freezer - Up To 50% Energy Saving Silver there the nig dk m jnklnhkvjkk.
+                </p>
+                
+                  <h4 class="mt-6"> <span class="text-gray-600">Product Code:</span> 54788 </h4> 
+                  <h4> <span class="text-gray-600">Brand:</span> Lorem</h4> 
+                  <h4> <span class="text-gray-600">Availability:</span> In stock</h4> 
+                
+                <h3 class="mt-6 text-2xl text-green-850 font-bold">
+                    $700.000
+                </h3>
+
+                <!--quantity section-->
+                <!--quantity section ends-->
+
+                <form class="mt-8">
+                    <a href="#" class="bg-green-850 text-white pt-2 pb-2 pl-16 pr-16 rounded-lg">Add to cart</a>
+                </form>
+            </div>
+        </section>
+        <hr>
+        <!--Item Images, Description & Price Section ends-->
+
+        <!--product specification section-->
+        <section class="mt-6 mb-8 grid grid-cols-11">
+            <div class="col-span-1"></div>
+            <div class="mb-4 col-span-7">
+                <div class="mb-4">
+                    <ul class="grid grid-cols-5 text-sm font-medium text-center"  id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" data-tabs-active-classes="text-green-850">
+                        <li class="col-span-1 border border-gray-300 " role="presentation">
+                            <button class="p-4" id="profile-tab" data-tabs-target="#product-desc" type="button" role="tab" aria-controls="product-desc" aria-selected="false">Product Description</button>
+                        </li>
+                        <li class="border border-gray-300" role="presentation">
+                            <button class="p-4" id="dashboard-tab" data-tabs-target="#specs" type="button" role="tab" aria-controls="specs" aria-selected="false">Specification</button>
+                        </li>
+                        <li class="border border-gray-300" role="presentation">
+                            <button class="p-4" id="settings-tab" data-tabs-target="#creditTerms" type="button" role="tab" aria-controls="creditTerms" aria-selected="false">Credit Terms</button>
+                        </li>
+                        <li class="border border-gray-300" role="presentation">
+                            <button class="p-4" id="contacts-tab" data-tabs-target="#delivery" type="button" role="tab" aria-controls="delivery" aria-selected="false">Delivery</button>
+                        </li>
+                        <li class="border border-gray-300" role="presentation">
+                            <button class="p-4" id="contacts-tab" data-tabs-target="#returns" type="button" role="tab" aria-controls="returns" aria-selected="false">Returns</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="default-tab-content">
+                    <div class="hidden p-4 rounded-lg border border-gray-300" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab">
+                        <p>Lorem ipsum dolor sit amet. Et voluptates animi id veritatis odio sit adipisci velit qui nulla veritatis. Ea error earum At quae nostrum aut voluptatem minima non iste veniam est perferendis consectetur. Ut voluptate vero et exercitationem dolorum est sapiente dicta aut quia libero aut quia perspiciatis ut optio soluta! </p>
+                        <p>Id voluptatum sint et iste alias non quae minus aut dignissimos omnis est quis molestias et quasi fuga non quibusdam reiciendis. Aut vero temporibus sed iste necessitatibus ea rerum dignissimos et optio pariatur ab quia nostrum qui dignissimos quia eum veritatis eligendi! Vel fugit ratione aut labore consequuntur qui omnis temporibus et reiciendis voluptate aut vero dignissimos hic molestias neque. </p>
+                        <p>Aut tempore officiis aut rerum odio et laboriosam vitae. Aut quisquam officia vel doloremque incidunt qui error ratione qui voluptates architecto est reprehenderit accusamus in iusto quia ut vitae quisquam. Aut rerum dicta sed repellendus deleniti At Quis inventore eum voluptatem voluptates. </p>
+
+                    </div>
+                    <div class="hidden p-4 rounded-lg border border-gray-300" id="specs" role="tabpanel" aria-labelledby="specs-tab">
+                        Lorem ipsum dolor sit amet. Qui vero fugiat non molestias galisum et maxime reprehenderit est repellat dolorem sit 
+                        dolores quia. Et mollitia voluptatem non iste veniam non veritatis sapiente ut asperiores consequatur vel eveniet fuga et quia quas sed quae officiis.
+                        Ex earum odio ut accusantium labore est laborum quod id dolor commodi aut fugit quas. Ea facilis sunt vel assumenda enim qui reprehenderit inventore est 
+                        possimus dolores. Est possimus eius vel galisum nihil sed voluptas exercitationem qui autem itaque? <br>
+                        Est quia aliquid ex perferendis possimus aut quam cumque. Qui dolor eaque in porro harum et perspiciatis mollitia ut voluptatem quod 33 quia doloribus.
+                    </div>
+                    <div class="hidden p-4 rounded-lg border border-gray-300" id="creditTerms" role="tabpanel" aria-labelledby="creditTerms-tab">
+                        <p>Lorem ipsum dolor sit amet. Et voluptates animi id veritatis odio sit adipisci velit qui nulla veritatis. Ea error earum At quae nostrum aut voluptatem 
+                            minima non iste veniam est perferendis consectetur. Ut voluptate vero et exercitationem dolorum est sapiente dicta aut quia libero aut quia 
+                            perspiciatis ut optio soluta! </p>
+                            <p>Id voluptatum sint et iste alias non quae minus aut dignissimos omnis est quis molestias et quasi fuga non quibusdam reiciendis. 
+                            Aut vero temporibus sed iste necessitatibus ea rerum dignissimos et optio pariatur ab quia nostrum qui dignissimos quia eum veritatis eligendi! Vel fugit ratione aut 
+                            labore consequuntur qui omnis temporibus et reiciendis voluptate aut vero dignissimos hic molestias neque. </p>
+                        <p>Aut tempore officiis aut rerum odio et laboriosam vitae. Aut quisquam officia vel doloremque incidunt qui error ratione qui voluptates architecto est reprehenderit accusamus in iusto quia ut vitae quisquam. Aut rerum dicta sed repellendus deleniti At Quis inventore eum voluptatem voluptates. </p>
+                    </div>
+                    <div class="hidden p-4 rounded-lg border border-gray-300" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+                        <p>Lorem ipsum dolor sit amet. Et voluptates animi id veritatis odio sit adipisci velit qui nulla veritatis. Ea error earum At quae nostrum aut voluptatem 
+                            minima non iste veniam est perferendis consectetur. Ut voluptate vero et exercitationem dolorum est sapiente dicta aut quia libero aut quia perspiciatis ut optio soluta! 
+                        </p>
+                        <p>Id voluptatum sint et iste alias non quae minus aut dignissimos omnis est quis molestias et quasi fuga non quibusdam reiciendis. Aut vero temporibus sed 
+                            iste necessitatibus ea rerum dignissimos et optio pariatur ab quia nostrum qui dignissimos quia eum veritatis eligendi! Vel fugit ratione aut labore 
+                            consequuntur qui omnis temporibus et reiciendis voluptate aut vero dignissimos hic molestias neque. </p><p>Aut tempore officiis aut rerum odio et 
+                                laboriosam vitae. Aut quisquam officia vel doloremque incidunt qui error ratione qui voluptates architecto est reprehenderit accusamus in iusto quia ut 
+                                vitae quisquam. Aut rerum dicta sed repellendus deleniti At Quis inventore eum voluptatem voluptates. </p>
+                    </div>
+                    <div class="hidden p-4 rounded-lg border border-gray-300" id="returns" role="tabpanel" aria-labelledby="returns-tab">
+                        Lorem ipsum dolor sit amet. Id consequatur accusamus rem beatae ullam ut velit atque eum nulla unde? Ea repellendus asperiores 
+                        sed beatae repellendus et pariatur eligendi qui cupiditate ipsam id assumenda vitae est voluptatum distinctio non dicta nihil. 
+                        Rem commodi quam vel harum quas est quae saepe et quia minima. Est odio esse et dolore dolores aut enim sunt in sunt 
+                        accusantium non internos earum rem neque rerum sed quibusdam modi. <br>
+                        Et officia iste sit deserunt sint et dignissimos nobis in quis asperiores non laudantium facere est fugiat molestiae? Et iste 
+                        vero rem dicta quia 33 sapiente quia et praesentium fuga et accusamus ullam. Ea aliquid veniam quo nesciunt magni aut beatae 
+                        galisum nam recusandae voluptatem vel totam adipisci qui delectus incidunt vel tenetur maiores. Ut voluptate blanditiis aut 
+                        perspiciatis ipsam in suscipit nemo in Quis tempora et quae reiciendis ex dolorum voluptas qui facere molestias?
+                        ui excepturi galisum. Qui numquam natus qui sapiente voluptas et officia maxime eum aperiam voluptatum.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!--product Specification Section ends-->
+
+        <!--Brands Section-->
+        <section>
+            <div class=" bg-white mt-6 mb-6 mx-4">
+                <h1 class="text-green-850 text-4xl font-bold text-center">“A lifestyle worth living” brands</h1>
+                <div class="grid grid-cols-6 mt-6 pb-6 ml-6">
+                    <img src="Assets/brand1.png" alt="">
+                    <img src="Assets/brand2.png" alt="">
+                    <img src="Assets/brand3.png" alt="">
+                    <img src="Assets/brand4.png" alt="">
+                    <img src="Assets/brand5.png" alt="">
+                    <img src="Assets/brand6.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--Brands Section-->
+
+
+        <!--footer-->
+        <section>
+            <div class="grid grid-cols-5 bg-green-850 text-white pt-6 pb-6">
+
+                <!--Online store-->
+                <div class="ml-4">
+                   <h2 class="mb-2 text-lg font-semibold">ONLINE STORE</h2>
+                    <ul class="list-none list-inside">
+                        <li>
+                            <a href="#">Fridges & Freezers</a>
+                        </li>
+                        <li>
+                            <a href="#">Beds</a>
+                        </li>
+                        <li>
+                            <a href="#">Stoves</a>
+                        </li>
+                        <li>
+                            <a href="#">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#">Lounge</a>
+                        </li>
+                        <li>
+                            <a href="#">Kitchen</a>
+                        </li>
+                        <li>
+                            <a href="#">Solar</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy on Lay By</a>
+                        </li>
+                        <li>
+                            <a href="#"> Zero Deposit Purchase</a>
+                        </li>
+                        <li>
+                            <a href="#">Request for a Qoutation</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Online store ends-->
+                <!--Customer Service-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">CUSTOMER SERVICE</h2>
+                     <ul class="list-none list-inside ">
+                         <li>
+                             <a href="#">FAQ</a>
+                         </li>
+                         <li>
+                             <a href="#">Catalog</a>
+                         </li>
+                         <li>
+                             <a href="#">Deliveries</a>
+                         </li>
+                         
+                     </ul>
+                 </div>
+                <!--Customer Service ends-->
+
+                <!--policies-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">POLICIES</h2>
+                     <ul class="list-none list-inside ">
+                         <li>
+                             <a href="#">Credit T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">LayBy T&cs</a>
+                         </li>
+                         <li>
+                             <a href="#"> Returns T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">Repairs T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">Deliveries T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">General T&Cs</a>
+                         </li>
+                     </ul>
+                 </div>
+                <!--policies ends-->
+
+                <!--other links-->
+                <div class=" col-span-2 mr-4">
+                    <h2 class="mb-2 text-lg font-semibold">
+                        Sign up to our newsletter for updates 
+                        <br> on promotions and new products:
+                    </h2>
+
+                    <div class="ml-0 pl-0">
+                        <!--search Bar-->
+                        <form class="flex items-center max-w-sm ">   
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                                </div>
+                                <input type="text" id="simple-search" class="bg-white border border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Email Address" required />
+                            </div>
+                        </form>
+                    <!--Search Bar end-->
+                    </div>
+                    <h2 class="mb-2 text-lg font-semibold mt-5">Follow us on Social Media</h2>
+                    
+                    <div class="grid grid-cols-12">
+                        <a href="#"><img class="p-1" src="Assets/facebook.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/instagram.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/linkedin.png" alt=""></a>
+                    </div>
+
+                    <h2 class="mb-2 text-lg font-semibold mt-5">WE ACCEPT:</h2>
+                    <div class="grid grid-cols-3">
+                        <a href="#"><img  src="Assets/visa.png" alt=""></a>
+                        <a href="#"><img class="pt-4" src="Assets/Mastercard.png" alt=""></a>
+                        <a href="#"><img class="pt-7" src="Assets/innnbucks.png" alt=""></a>
+                    </div>
+                    <div class="grid grid-cols-2 ">
+                        <a href="#"><img src="Assets/ecocash.png" alt=""></a>
+                        <a href="#"><img src="Assets/zipit.png" alt=""></a>
+                    </div>
+                    
+                 </div>
+                <!--other links ends-->
+
+            </div>
+        </section>
+
+        <!--footer ends-->
+        
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+   
+</html>

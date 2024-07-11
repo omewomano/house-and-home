@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | House & Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+        <!--TopBar Begins-->
+        <section>
+            <nav class="bg-green-850 border-b border-b-gray-400">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse flex-none w-60">
+                        <img src="Assets/House-and-Home-Logo.png" class="h-32" alt="house and home Logo" />
+                    </a>
+
+                    <div class="flex-none w-96">      
+                        <div class="relative hidden md:block ">
+                            <div class="absolute inset-y-0 end-0 flex items-center ps-3 pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                            <span class="sr-only">Search icon</span>
+                            </div>
+                            <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-800 rounded-md bg-gray-50" placeholder="What product are you looking for?">
+                        </div>
+                    </div>
+
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        <li>
+                        <a href="#" class="block py-2 px-3 text-white md:bg-transparent md:p-0 " aria-current="page">Login / Signup</a>
+                        </li>
+                    </ul>
+
+                    <div class="">      
+                        <div class="relative hidden md:block ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00000"><path d="M284.53-80.67q-30.86 0-52.7-21.97Q210-124.62 210-155.47q0-30.86 21.98-52.7Q253.95-230 284.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83Zm400 0q-30.86 0-52.7-21.97Q610-124.62 610-155.47q0-30.86 21.98-52.7Q653.95-230 684.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83ZM238.67-734 344-515.33h285.33l120-218.67H238.67ZM206-800.67h589.38q22.98 0 34.97 20.84 11.98 20.83.32 41.83L693.33-490.67q-11 19.34-28.87 30.67-17.87 11.33-39.13 11.33H324l-52 96h487.33V-286H278q-43 0-63-31.83-20-31.84-.33-68.17l60.66-111.33-149.33-316H47.33V-880h121.34L206-800.67Zm138 285.34h285.33H344Z"/></svg>
+                                <span class="sr-only">Cart</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        <!--TopBar ends-->
+
+
+        <!--Header Begins-->
+        <section>
+            <nav class="bg-green-850">
+                <div class="pl-9 pr-6 pt-6 pb-6">                    
+                    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                    <div class="w-full md:block md:w-auto" id="navbar-default">
+                        <ul class="flex flex-wrap items-center justify-between mx-auto font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                            <li>
+                                <button id="mega-menu-one-full-dropdown-one" data-collapse-toggle="mega-menu-full-dropdown-one" class="flex items-center justify-between w-full py-2 px-3 text-white rounded md:w-auto  md:hover:bg-transparent md:border-0 md:hover:text-red-850 md:p-0">Product 
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                </button>
+                            </li>
+                            
+                            <li>
+                                <button id="mega-menu-full-dropdown-button-two" data-collapse-toggle="mega-menu-full-dropdown-two" class="flex items-center justify-between w-full py-2 px-3 text-white rounded md:w-auto  md:hover:bg-transparent md:border-0 md:hover:text-red-850 md:p-0">Shop By Brand
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Shop By Brand</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Fridges</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Bed</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Stove</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Dining</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Lounge</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Solar</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Catalog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--product dropdown Content-->
+                <div  id="mega-menu-full-dropdown-one" class="hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y active:#mega-menu-full-dropdown-two:hidden">
+                    <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+                        <ul>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Online Stores</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Segmentation</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Marketing CRM</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Online Stores</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Segmentation</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Marketing CRM</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--product dropdown content end-->
+                <!--shop by brand dropdown content-->
+                <div id="mega-menu-full-dropdown-two" class=" hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
+                    program
+                    <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+                        
+                        <ul>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Online Stores</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Segmentation</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Marketing CRM</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Online Stores</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Segmentation</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="font-semibold">Marketing CRM</div>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--shop by brand dropdown content end-->
+
+
+
+            </nav>    
+        </section>
+        <!--Header Begins-->
+        <!--breadcrumb-->
+        <nav class="flex px-5 py-3 text-black" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <li class="inline-flex items-center">
+                <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700">
+                Home
+                </a>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="ms-1 text-sm font-medium text-gray-700">Login</span>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="ms-1 text-sm font-medium text-green-850">Sign Up</span>
+                </div>
+            </li>
+            </ol>
+        </nav>  
+        <!--breadcrumb end-->
+        <!--login form section-->
+        <section class="bg-gray-200">
+            <div class="py-8 overflow-hidden flex items-center justify-center">
+                <div class="bg-white w-2/6  rounded-lg">                    
+                    <div class="mb-5">
+                        <h2 class="text-4xl text-center m-5">Create an Account</h2>
+                        <hr>
+                    </div>
+                    <form class="max-w-sm mx-auto p-5">
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
+                            <input type="text" id="name" class="bg-gray-50 border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter your Name" required />
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email Address</label>
+                            <input type="email" id="email" class="bg-gray-50 border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter email address" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Phone Number</label>
+                            <input type="tel" id="phone" class="bg-gray-50 border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter Phone Number" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="DOB" class="block mb-2 text-sm font-medium text-gray-900">Date Of Birth</label>
+                            <input type="date" id="DOB" class="bg-gray-50 border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter Date of Birth" required />
+                        </div>
+
+                        <div class="mb-5 relative hidden md:block ">
+                            <div class="absolute inset-y-12 end-3 flex items-center ps-3 pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#00000"><path d="M480-312q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Zm0-72q-40 0-68-28t-28-68q0-40 28-68t68-28q40 0 68 28t28 68q0 40-28 68t-68 28Zm0 192q-142.6 0-259.8-78.5Q103-349 48-480q55-131 172.2-209.5Q337.4-768 480-768q142.6 0 259.8 78.5Q857-611 912-480q-55 131-172.2 209.5Q622.6-192 480-192Zm0-288Zm0 216q112 0 207-58t146-158q-51-100-146-158t-207-58q-112 0-207 58T127-480q51 100 146 158t207 58Z"/></svg>
+                            </div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                            <input type="password" id="password" class="bg-gray-50 border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5"placeholder="Enter Password" required />
+                        </div>
+
+                        <div class="mb-5 relative hidden md:block ">
+                            <div class="absolute inset-y-12 end-3 flex items-center ps-3 pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#00000"><path d="M480-312q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Zm0-72q-40 0-68-28t-28-68q0-40 28-68t68-28q40 0 68 28t28 68q0 40-28 68t-68 28Zm0 192q-142.6 0-259.8-78.5Q103-349 48-480q55-131 172.2-209.5Q337.4-768 480-768q142.6 0 259.8 78.5Q857-611 912-480q-55 131-172.2 209.5Q622.6-192 480-192Zm0-288Zm0 216q112 0 207-58t146-158q-51-100-146-158t-207-58q-112 0-207 58T127-480q51 100 146 158t207 58Z"/></svg>
+                            </div>
+                            <label for="confirmPassword" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Confirm Password</label>
+                            <input type="password" id="confirmPassword" class="bg-gray-50 border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5"placeholder="Confirm password" required />
+                        </div>
+
+                        <button class="bg-green-850 font-medium p-2 md:p-4 text-white uppercase w-full rounded">Create an Account</button>
+              
+                        <div class="flex items-center mt-4">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 active:bg-green-850 text-green-850 bg-gray-100 border-green-850 rounded focus:ring-green-850">
+                            <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">By signing up, you accept our <a href="#" class="text-green-850 hover:underline">terms and conditions</a> & <a href="#" class="text-green-850 dark:text-blue-500 hover:underline"> privacy policy</a>.</label>
+                        </div>
+
+                    </form>
+                    
+                    <div class="pb-5 pt-2 px-5 bg-gray-50 rounded-lg">
+                        <h2 class="text-sm text-gray-400 text-center m-5">Already have an Account?</h2>
+                        <button class="border border-red-850 font-bold text-xl p-2 md:p-4 text-red-850 w-full rounded">Sign In</button>
+                        
+                    </div>
+                </div>
+               </div>  
+        </section>
+        <!--login form section end-->
+             
+
+
+
+        <!--footer-->
+        <section>
+            <div class="grid grid-cols-5 bg-green-850 text-white pt-6 pb-6">
+
+                <!--Online store-->
+                <div class="ml-4">
+                   <h2 class="mb-2 text-lg font-semibold">ONLINE STORE</h2>
+                    <ul class="list-none list-inside">
+                        <li>
+                            <a href="#">Fridges & Freezers</a>
+                        </li>
+                        <li>
+                            <a href="#">Beds</a>
+                        </li>
+                        <li>
+                            <a href="#">Stoves</a>
+                        </li>
+                        <li>
+                            <a href="#">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#">Lounge</a>
+                        </li>
+                        <li>
+                            <a href="#">Kitchen</a>
+                        </li>
+                        <li>
+                            <a href="#">Solar</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy on Lay By</a>
+                        </li>
+                        <li>
+                            <a href="#"> Zero Deposit Purchase</a>
+                        </li>
+                        <li>
+                            <a href="#">Request for a Qoutation</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Online store ends-->
+                <!--Customer Service-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">CUSTOMER SERVICE</h2>
+                     <ul class="list-none list-inside ">
+                         <li>
+                             <a href="#">FAQ</a>
+                         </li>
+                         <li>
+                             <a href="#">Catalog</a>
+                         </li>
+                         <li>
+                             <a href="#">Deliveries</a>
+                         </li>
+                         
+                     </ul>
+                 </div>
+                <!--Customer Service ends-->
+
+                <!--policies-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">POLICIES</h2>
+                     <ul class="list-none list-inside ">
+                         <li>
+                             <a href="#">Credit T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">LayBy T&cs</a>
+                         </li>
+                         <li>
+                             <a href="#"> Returns T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">Repairs T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">Deliveries T&Cs</a>
+                         </li>
+                         <li>
+                             <a href="#">General T&Cs</a>
+                         </li>
+                     </ul>
+                 </div>
+                <!--policies ends-->
+
+                <!--other links-->
+                <div class=" col-span-2 mr-4">
+                    <h2 class="mb-2 text-lg font-semibold">
+                        Sign up to our newsletter for updates 
+                        <br> on promotions and new products:
+                    </h2>
+
+                    <div class="ml-0 pl-0">
+                        <!--search Bar-->
+                        <form class="flex items-center max-w-sm ">   
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                                </div>
+                                <input type="text" id="simple-search" class="bg-white border border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Email Address" required />
+                            </div>
+                        </form>
+                    <!--Search Bar end-->
+                    </div>
+                    <h2 class="mb-2 text-lg font-semibold mt-5">Follow us on Social Media</h2>
+                    
+                    <div class="grid grid-cols-12">
+                        <a href="#"><img class="p-1" src="Assets/facebook.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/instagram.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/linkedin.png" alt=""></a>
+                    </div>
+
+                    <h2 class="mb-2 text-lg font-semibold mt-5">WE ACCEPT:</h2>
+                    <div class="grid grid-cols-3">
+                        <a href="#"><img  src="Assets/visa.png" alt=""></a>
+                        <a href="#"><img class="pt-4" src="Assets/Mastercard.png" alt=""></a>
+                        <a href="#"><img class="pt-7" src="Assets/innnbucks.png" alt=""></a>
+                    </div>
+                    <div class="grid grid-cols-2 ">
+                        <a href="#"><img src="Assets/ecocash.png" alt=""></a>
+                        <a href="#"><img src="Assets/zipit.png" alt=""></a>
+                    </div>
+                    
+                 </div>
+                <!--other links ends-->
+
+            </div>
+        </section>
+
+        <!--footer ends-->
+        
+        
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    
+</body>
+   
+</html>

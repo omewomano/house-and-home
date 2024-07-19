@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping | House & Home</title>
+    <title>Payment | House & Home</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -299,79 +299,135 @@
             </ol>
         </nav>  
         <!--breadcrumb end-->
-        <!--shipping details section-->
-        <section class="bg-mute">
-            <div class="py-8 overflow-hidden flex items-center justify-center">
-                <div class="bg-white w-2/6  rounded-lg">                    
-                    <div class="mb-5">
-                        <h2 class="text-4xl text-center m-5 py-6">Shipping Details</h2>
-                        <hr>
-                    </div>
-                    <form class="max-w-sm mx-auto p-5">
-                        <div class="mb-5">
-                            <label for="Country" class="block mb-2 text-sm font-medium text-gray-900">Country</label>
-                            <div id="selectedCountry" class="block mb-2 text-sm font-medium text-gray-900 border border-mute rounded-lg p-2">
-                                xxxxxx <a href="#" class="float-right text-xs text-green-850">Change</a>
+
+        <!--payment section-->
+        <section class="bg-mute grid grid-cols-7 ">
+            <div class="col-span-4 bg-white m-3 ml-0 px-6">
+                <h3 class="text-3xl text-center p-6">Payment</h3>
+                <hr>
+                <h3 class="text-2xl text-center pt-5">Express Checkout</h3>
+
+                <div class="flex flex-row space-x-9   p-7 m-7  mt-0 border border-mute">
+                    <div class="grid grid-cols-5 gap-3 place-content-stretch">
+                        <div class="bg-blue-500 rounded-md p-1 shadow-md">                        
+                            <img class="w-20 mx-auto mt-8"  src="Assets/ecocash.png" alt="">
+                        </div>
+
+                        <div class="bg-yellow-400 rounded-md p-1 shadow-md">
+                            <img class="w-20 mx-auto mt-2" src="Assets/visa.png" alt="">
+                        </div>
+
+                        <div class="bg-black rounded-md p-1 shadow-md">
+                            <img class="w-16 mx-auto mt-4" src="Assets/Mastercard.png" alt="">                        
+                        </div>
+
+                        <div class="rounded-md bg-red-600 p-1 shadow-md">
+                            <img class="mx-auto mt-4" src="Assets/innnbucks.png" alt="">                        
+                        </div>
+
+                        <div class="p-2 rounded-md bg-blue-800 shadow-md">
+                            <img class="w-24 mx-auto mt-5 " src="Assets/zipit.png" alt="">                        
+                        </div>
+                    </div>  
+                                
+                    
+                </div> 
+                <hr> 
+                <!--card details section-->
+                <div class="p-5  md:mx-32">
+                    <h2 class="text-xl">Enter card details</h2>
+                    
+                    <form class="pt-3">
+                        <div class="grid gap-6 mb-6 md:grid-cols-6">
+                            <div class="md:col-span-3">
+                                <label for="Card number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Card Number</label>
+                                <input type="text" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5" placeholder="xxxx xxxx xxxx xxxx" required />
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="Expiration Date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expiration Date</label>
+                                <input type="text" id="last_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="mm/yy" required />
+                            </div>
+                            <div class="md:col-span-1">
+                                <label for="cvc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">cvc</label>
+                                <input type="text" id="last_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="xxx" required />
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+                                <input type="tel" id="phone" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
                             </div>
                         </div>
-                        <div class="mb-5">
-                            <label for="shipTo" class="block mb-2 text-sm font-medium text-gray-900">Ship to</label>
-                            <div id="shipTo" class="block mb-2 text-sm font-medium text-gray-900 border border-mute rounded-lg p-2">
-                                xxxxxx <a href="#" class="float-right text-xs text-green-850">Change</a>
-                            </div>
-                        </div>
-                        <div class="mb-5">
-                            <label for="shipMethod" class="block mb-2 text-sm font-medium text-gray-900">Ship Method</label>
-                            <div id="shipTo" class="block mb-2 text-sm font-medium text-gray-900 border border-mute rounded-lg p-2">
-                                xxxxxx 
-                                <a href="#" class="float-right text-xs text-green-850">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#009674"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                                </a>
-                            </div>
-                        </div>                      
-
-
-                        <div class="flex items-center mb-4">
-                            <input id="premiumDelivery" type="radio" value="" name="Delivery" class="! w-4 h-4 text-green-500 bg-gray-100 border-gray-300 focus:ring-green-500">
-                            <label for="premiumDelivery" class="ms-2 text-xs font-medium text-gray-900 w-2/6">Premium Delivery</label>
-                            <span class="text-gray-600 text-xs w-2/6">3-5 working days</span>
-                            <span class="text-black text-right w-2/6">$7,000</span>
-                        </div>
-                        <div class="flex items-center mb-4">
-                            <input checked id="economyDelivery" type="radio" value="" name="Delivery" class="w-4 h-4 text-green-500 bg-gray-100 border-gray-300 focus:ring-green-500">
-                            <label for="economyDelivery" class="ms-2 text-xs font-medium text-gray-900 w-2/6">Economy Delivery</label>
-                            <span class="text-gray-600 text-xs w-2/6">7-14 working days</span>
-                            <span class="text-black text-right w-2/6">$7,000</span>
-                        </div>
-                        <hr>
-                        <div class="mb-4 grid grid-cols-2 mt-4">
-                            <span class="text-gray-600 text-xs">7-14 working days</span>
-                            <span class="text-black text-right">$7,000</span>
-                        </div>
-
-
-
-                        <button class="bg-green-850 font-medium p-2 md:p-4 text-white uppercase w-full rounded">Proceed to shipping</button>
-
                         <div class="flex items-center mt-4">
                             <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-green-500 bg-gray-100 border-gray-300 focus:ring-green-500">
-                            <label for="link-checkbox" class="ms-2 text-xs font-medium text-gray-900">By clicking on proceed payment, you have agreed to the <a href="#" class="text-green-850 hover:underline">terms and conditions</a> & <a href="#" class="text-green-850 hover:underline">return policy</a>.</label>
+                            <label for="link-checkbox" class="ms-2 text-xs font-medium text-gray-900">Save Card</label>
                         </div> 
+                        <button class=" mt-4 bg-green-850 font-medium p-2 md:p-4 text-white uppercase w-4/6 rounded md:ml-24">Make Payment</button>
+
                     </form>
-                    <div class="max-w-sm mx-auto p-5 grid grid-cols-5">
-                        <div class="p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="float-left border border-mute" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M576-240 336-480l240-240 51 51-189 189 189 189-51 51Z"/></svg>
+
+                </div>
+
+                <!--card details section end-->
+            </div> 
+            
+            <!--items section-->
+            <div class="col-span-3 m-3  md:mx-20">
+                
+                <div class="bg-white px-3 rounded">
+                    <div class="grid grid-cols-2 py-3">
+                        <h3 class="font-bold pt-3">3 Items</h3>
+                        <div class="">
+                            <a href="#" class=" bg-mute float-right rounded text-sm w-12 p-3">Edit</a>
                         </div>
-                        <div class="col-span-3"> 
-                            <button class="text-sm border border-gray-700 rounded-md bg-mute p-2 w-full">Instant refund to cancel</button>
-                        </div>
-                        <div class="p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="float-right border border-mute" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M522-480 333-669l51-51 240 240-240 240-51-51 189-189Z"/></svg>
-                        </div>
+                        
                     </div>
-               </div>  
+                    <hr>
+
+                     <!--item 1-->
+                <div class="grid grid-cols-5 text-sm">
+                    <img src="Assets/item-img-lg.png" alt="" class="p-4 col-span-1">
+                    <div class="col-span-3 p-4">
+                        <h5 class="">$70,000</h5>
+                        <h5>Capri 30x39 Cooling freezer</h5>
+                        <h6>Qty: 1</h6>
+                    </div>
+                </div>
+                <hr>
+                <!--item 1 end-->
+                <!--item 2-->
+                <div class="grid grid-cols-5 text-sm">
+                    <img src="Assets/item-img-lg.png" alt="" class="p-4 col-span-1">
+                    <div class="col-span-3 p-4">
+                        <h5 class="">$70,000</h5>
+                        <h5>Capri 30x39 Cooling freezer</h5>
+                        <h6>Qty: 1</h6>
+                    </div>
+                </div>
+                <hr>
+                <!--item 2 end-->
+
+                <!--item 3-->
+                <div class="grid grid-cols-5 text-sm">
+                    <img src="Assets/item-img-lg.png" alt="" class="p-4 col-span-1">
+                    <div class="col-span-3 p-4">
+                        <h5 class="">$70,000</h5>
+                        <h5>Capri 30x39 Cooling freezer</h5>
+                        <h6>Qty: 1</h6>
+                    </div>
+                </div>
+                <hr>
+                <!--item 3 end-->
+                <div class="p-4 grid grid-cols-2">
+                    <span class="text-gray-600 text-xs">Subtotal</span>
+                    <span class="text-black text-right">$568.000</span>
+                </div>
+                <div class="px-4 pb-4 grid grid-cols-2">
+                    <span class="text-gray-600 text-xs">TOTAL PAYMENT</span>
+                    <span class="text-black text-right text-xl font-bold">$459.000</span>                    
+                </div>
+            </div> 
+            <!--items section end-->
         </section>
-        <!--shipping details section end-->
+        <!--payment section end-->
              
 
         <!--Brands Section-->

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catergory | House & Home</title>
+    <title>Shipping address | House & Home</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -282,350 +282,81 @@
             </li>
             <li aria-current="page">
                 <div class="flex items-center">
+                    <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="ms-1 text-sm font-medium text-gray-700">Shipping</span>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
                 <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                 </svg>
-                <span class="ms-1 text-sm font-medium text-green-850">Dining</span>
+                <span class="ms-1 text-sm font-medium text-green-850">Payment</span>
                 </div>
             </li>
             </ol>
         </nav>  
-        <hr>
         <!--breadcrumb end-->
+        <!--login form section-->
+        <section class="bg-mute">
+            <div class="py-8 overflow-hidden flex items-center justify-center">
+                <div class="bg-white w-2/6  rounded-lg">                    
+                    <div class="mb-5">
+                        <h2 class="text-4xl text-center m-5">Shipping Address</h2>
+                        <hr>
+                    </div>
+                    <form class="max-w-sm mx-auto p-5">
+                        <div class="mb-5">
+                            <label for="Country" class="block mb-2 text-sm font-medium text-gray-900">Country</label>
+                            <select id="Sort" class="border border-black mb-5 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Select Country">
+                                <option value="USA">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="SA">South Africa</option>
+                                <option value="CH">China</option>
+                            </select>
+                        </div>
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
+                            <input type="text" id="name" class="border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter your Name" required />
+                        </div>
 
-        <!--section name and sort bar div-->
-        <div class="p-4 grid grid-cols-2">
-            <h2 class="text-3xl font-bold">Dining</h2>
-            <form>
-                <select id="Sort" class="float-end bg-white border border-gray-300 textblack text-sm rounded-lg focus:ring-gray-300 focus:border-gray-300 block w-40">
-                  <option selected>Sort By:</option>
-                  <option value="PR">Price</option>
-                  <option value="SI">Size</option>
-                  <option value="FS">free Shipping</option>
-                  <option value="Di">Discount</option>
-                </select>
-            </form>
-        </div>
-        <!--section name and sort bar div ends-->
-        <!--refined Search & Content section-->
-        <section class="grid grid-cols-8">
-            <!--refined search-->
-            <div class="col-span-2 p-5 pt-2">
-               <h3 class="border border-mute p-4 pt-2 border-b-0">Refined Search</h3> 
-               <ul class="w-full border border-mute border-b-0">
-                    <li class="border border-mute p-2 text-green-850">
-                        Fridge type                        
-                    </li>
-                    <li class="p-3 ">
-                        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                    </li>
-                    <li class="p-3 ">
-                        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                    </li>
-                    <li class="p-3 ">
-                        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded">
-                        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                    </li>
-                    <li class="p-3 ">
-                        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                    </li>
-                    <li class="p-3 ">
-                        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                    </li>
-                </ul> 
-                <ul class="w-full border border-mute border-b-0">
-                     <li class="border border-mute p-2 text-green-850">Color                       
-                     </li>
-                     <li class="p-3 ">
-                         <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded">
-                         <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                     </li>
-                     <li class="p-3 ">
-                         <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                         <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                     </li>
-                     <li class="p-3 ">
-                         <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                         <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                     </li>
-                     <li class="p-3 ">
-                         <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded f">
-                         <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                     </li>
-                     <li class="p-3 ">
-                         <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                         <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                     </li>
-                 </ul> 
-                 <ul class="w-full border border-mute">
-                      <li class="border border-mute p-2  text-green-850">Price                       
-                      </li>
-                      <li class="p-3 ">
-                          <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                          <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                      </li>
-                      <li class="p-3 ">
-                          <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                          <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                      </li>
-                      <li class="p-3 ">
-                          <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                          <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                      </li>
-                      <li class="p-3 ">
-                          <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                          <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                      </li>
-                      <li class="p-3 ">
-                          <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-mute bg-gray-100 border-gray-300 rounded ">
-                          <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900">Fridge type</label>
-                      </li>
-                  </ul>
-            </div>
-            <!--refined search ends-->
-            <!--content Section ends-->
-            <div class="col-span-6 pt-0">
-                <div class=" grid grid-cols-3 mx-10">
-                    
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
+                        <div class="mb-5">
+                            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Phone Number</label>
+                            <input type="tel" id="phone" class=" border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter Phone Number" required />
                         </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->
-                    <!--Item -->
-                    <div class="w-64 col-span-1 mt-3 mb-3 border border-mute p-3 rounded">
-                        <a href="#">
-                            <img class="p-1 rounded-t-lg  block w-full" src="Assets/Trending-product2.png" alt="product image" />
-                        </a>
-                        <div class=" mt-1">
-                            <div class="text-left">
-                                <h5 class="pt-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Capri TF 290 Metallic</h5>
-                                <p class="text-xl font-bold mb-1 text-green-850 pt-3">$339.00</p>
-                                <a href="#" class="text-green-850 mt-4 border border-green-850 font-medium rounded-md text-sm px-5 py-2.5 text-center block w-full">
-                                    Add to Cart
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Item  end-->                    
-                </div> 
 
-                <!--page Navigation-->
-                <nav aria-label="Page navigation" class="float-end pr-24 pb-5 pt-5">
-                    <ul class="inline-flex -space-x-px text-sm">
-                        <li>
-                            <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-green-850 hover:text-white ">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-black bg-white border border-gray-300 hover:bg-green-850 hover:text-white">1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-black bg-white border border-gray-300 hover:bg-green-850 hover:text-white">2</a>
-                        </li>
-                        <li>
-                            <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-black border border-gray-300 bg-blue-50 hover:bg-green-850 hover:text-white">3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-black bg-white border border-gray-300 hover:bg-green-850 hover:text-white">4</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-black bg-white border border-gray-300 hover:bg-green-850 hover:text-white">....</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-black bg-white border border-gray-300 hover:bg-green-850 hover:text-white">20</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight  bg-white border border-gray-300 rounded-e-lg hover:bg-green-850 hover:text-white ">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!--page Navigation end-->
-                 
-            </div>
-            
+                        <div class="mb-5">
+                            <label for="Address" class="block mb-2 text-sm font-medium text-gray-900">Address</label>
+                            <input type="text" id="ADD" class=" border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Home Address" required />
+                        </div>
 
+                        <div class="mb-5">
+                            <label for="apartment" class="block mb-2 text-sm font-medium text-gray-900">Apartment, Suite etc (optional)</label>
+                            <input type="text" id="ADD" class=" border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Apartment" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="State" class="block mb-2 text-sm font-medium text-gray-900">State</label>
+                            <input type="text" id="ADD" class=" border border-black text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="state" required />
+                        </div>
+
+                        <div class="flex items-center mt-4 mb-5">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 active:bg-green-850 text-green-500 focus:ring-green-500 bg-gray-100 border-green-850 rounded">
+                            <label for="link-checkbox" class="ms-2 text-xs font-medium text-gray-900">Save this information for next time</label>
+                        </div>
+
+                        <button class="bg-green-850 font-medium p-2 md:p-4 text-white uppercase w-full rounded">Proceed to shipping</button>
+              
+                        
+
+                    </form>
+                </div>
+               </div>  
         </section>
-        <!--content Section ends-->
-        <!--refined Search & Content section end-->
+        <!--login form section end-->
              
 
         <!--Brands Section-->

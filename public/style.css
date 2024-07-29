@@ -2520,6 +2520,10 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 768px) {
+  .md\:z-50 {
+    z-index: 50;
+  }
+
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }

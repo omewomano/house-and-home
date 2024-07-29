@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction details | House & Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+        <!--TopBar Begins-->
+        <section>
+            <nav class="bg-green-850 border-b border-b-gray-400">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse flex-none w-60">
+                        <img src="Assets/House-and-Home-Logo.png" class="h-32" alt="house and home Logo" />
+                    </a>
+
+                    <div class="flex-none w-96">      
+                        <div class="relative hidden md:block ">
+                            <div class="absolute inset-y-0 end-0 flex items-center ps-3 pointer-events-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                            <span class="sr-only">Search icon</span>
+                            </div>
+                            <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-800 rounded-md bg-gray-50" placeholder="What product are you looking for?">
+                        </div>
+                    </div>
+
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        <li>
+                        <a href="#" class="block py-2 px-3 text-white md:bg-transparent md:p-0 " aria-current="page">Login / Signup</a>
+                        </li>
+                    </ul>
+
+                    <div class="">      
+                        <div class="relative hidden md:block ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#00000"><path d="M284.53-80.67q-30.86 0-52.7-21.97Q210-124.62 210-155.47q0-30.86 21.98-52.7Q253.95-230 284.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83Zm400 0q-30.86 0-52.7-21.97Q610-124.62 610-155.47q0-30.86 21.98-52.7Q653.95-230 684.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83ZM238.67-734 344-515.33h285.33l120-218.67H238.67ZM206-800.67h589.38q22.98 0 34.97 20.84 11.98 20.83.32 41.83L693.33-490.67q-11 19.34-28.87 30.67-17.87 11.33-39.13 11.33H324l-52 96h487.33V-286H278q-43 0-63-31.83-20-31.84-.33-68.17l60.66-111.33-149.33-316H47.33V-880h121.34L206-800.67Zm138 285.34h285.33H344Z"/></svg>
+                                <span class="sr-only">Cart</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        <!--TopBar ends-->
+
+
+        <!--Header Begins-->
+        <section>
+            <nav class="bg-green-850">
+                <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="w-full md:block md:w-auto p-6" id="navbar-default">
+                  <ul class="flex flex-wrap items-center justify-between mx-auto font-bold p-4 md:p-0 mt-4  rounded-lg md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                   
+                    <li>
+                      <button id="ProductDropdownLink" data-dropdown-toggle="productDropdownItems" class="flex items-center justify-between w-full text-white rounded">Dropdown 
+                          <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                          </svg>
+                      </button>
+                        <!-- Dropdown menu -->
+                        <div id="productDropdownItems" class="z-10 hidden w-full">
+                            <div class="grid grid-cols-6  py-6 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full">
+                                <ul class="space-y-4 text-left pl-10">
+                                    <li class="font-bold text-black underline">
+                                        Bedding
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Dish Washer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Microwave</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Toaster</a> 
+                                    </li>
+                                </ul>
+                
+                                <ul class="space-y-4 text-left pl-10">
+                                    <li class="font-bold text-black underline">
+                                        Furniture
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Dish Washer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Microwave</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Toaster</a> 
+                                    </li>
+                                </ul>
+                
+                                <ul class="space-y-4 text-left pl-10">
+                                    <li class="font-bold text-black underline">
+                                        Electronics
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Dish Washer</a> 
+                                    </li>
+                                    
+                                    <li class="text-gray-700">
+                                        <a href="">Microwave</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Toaster</a> 
+                                    </li>
+                                </ul>
+                
+                                <ul class="space-y-4 text-left pl-10">
+                                    <li class="font-bold text-black underline">
+                                        Audio
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Dish Washer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Microwave</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Toaster</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                </ul>
+                
+                                <ul class="space-y-4 text-left  pl-10">
+                                    <li class="font-bold text-black underline">
+                                        Utensils
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Dish Washer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Microwave</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Toaster</a> 
+                                    </li>
+                                </ul>
+                
+                                <ul class="space-y-4 text-left text-black pl-10">
+                                    <li class="font-bold underline">
+                                        tools
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Airfryer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Stoves </a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Dish Washer</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Microwave</a> 
+                                    </li>
+                                    <li class="text-gray-700">
+                                        <a href="">Toaster</a> 
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </li>   
+                    <li>
+                      <button id="shopByBrandLink" data-dropdown-toggle="shopByBrand" class="flex items-center justify-between w-full py-2 px-3 text-white rounded">Shop By Brand 
+                          <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                      </svg></button>
+                      <!-- Dropdown menu -->
+                      <div id="shopByBrand" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="space-y-3 text-left text-black pl-10 py-4">
+                            <li class="font-bold underline">
+                                tools
+                            </li>
+                            <li class="text-gray-700">
+                                <a href="">Airfryer</a> 
+                            </li>
+                            <li class="text-gray-700">
+                               <a href="">Stoves </a> 
+                            </li>
+                            <li class="text-gray-700">
+                               <a href="">Dish Washer</a> 
+                            </li>
+                            <li class="text-gray-700">
+                               <a href="">Microwave</a> 
+                            </li>
+                            <li class="text-gray-700">
+                               <a href="">Toaster</a> 
+                            </li>
+                            <li class="text-gray-700">
+                                <a href="">Microwave</a> 
+                             </li>
+                             <li class="text-gray-700">
+                                <a href="">Toaster</a> 
+                             </li>
+                        </ul>
+                      </div>
+                  </li>           
+                  <li>
+                      <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Fridges</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Bed</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Stove</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Dining</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Lounge</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Solar</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block py-2 ppx-3 text-white rounded hover:bg-green-600 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 ">Catalog</a>
+                  </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>   
+        </section>
+        <!--Header Begins-->
+        <!--breadcrumb-->
+        <nav class="flex px-5 py-3 text-black" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <li class="inline-flex items-center">
+                <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700">
+                Home
+                </a>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="ms-1 text-sm font-medium text-gray-700">Shipping</span>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="ms-1 text-sm font-medium text-green-850">Payment</span>
+                </div>
+            </li>
+            </ol>
+        </nav>  
+        <!--breadcrumb end-->
+
+        <!--Transaction details section-->
+        <section class="bg-mute p-2">
+            <div class="bg-white w-full rounded px-28">
+                <div class="grid grid-cols-2 pt-4">
+                    <img src="Assets/uba.png" alt="" class="w-36 ">
+                    <img src="Assets/visa.png" alt="" class="place-self-end w-24 pr-3">
+                </div>
+                <div class="grid grid-cols-1 place-items-center pb-7">
+                    <h5 class="text-base w-4/5 pt-7">
+                        For security reasons, a one-time password will be sent to you via your mobile number email. 
+                        Please select your desired option.
+                    </h5>
+                    <div class=" w-4/5 pt-7">
+                        <input id="email-checkbox" type="checkbox" value="" class="w-4 h-4 text-green-500 bg-gray-100 border-gray-300 focus:ring-green-500">
+                        <label for="email-checkbox" class="ms-2 text-xs font-medium text-gray-900">Email</label>
+
+                        <input id="sms checkbox" type="checkbox" value="" class="w-4 h-4 text-green-500 bg-gray-100 border-gray-300 focus:ring-green-500 ml-10">
+                        <label for="Sms-checkbox" class="ms-2 text-xs font-medium text-gray-900">Sms</label>
+                    </div> 
+                    <div class="w-3/6 border border-mute mt-6 rounded p-4 pb-10 shadow-sm">
+                        <h2 class="font-bold text-center pt-4 pb-4">
+                            Transaction Details
+                        </h2>
+                        <div class="grid grid-cols-3 pl-3 font-light gap-y-4">
+                            <h2 class="col-span-2 ">
+                                Merchant:
+                            </h2>
+                            <h2 class="col-span-1">
+                                House&Home
+                            </h2>
+                            <h2 class="col-span-2">
+                                Transaction Amount:
+                            </h2>
+                            <h2 class="col-span-1">
+                                $459.000
+                            </h2>
+                            <h2 class="col-span-2">
+                                Card Number:
+                            </h2>
+                            <div class="col-span-1">
+                                <input type="card" id="code" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-3/4 p-2.5 mt-0"  placeholder=" 123 456 789" required />
+                            </div>
+                            <h2 class="col-span-2">
+                                Enter Code:
+                            </h2>
+                            <div class="col-span-1">
+                                <input type="text" id="code" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-2/4"  placeholder=" xx xx x" required />
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="w-3/6 text-right text-sm py-3 ">Resend OTP</a>
+                        <button class=" mt-2 bg-green-850 font-medium md:p-2 text-white uppercase w-1/4 rounded">Done</button>
+                   
+                  
+                </div>
+            </div>
+        </section>
+        <!--Transaction details section end-->
+             
+
+        <!--Brands Section-->
+        <section>
+            <div class=" bg-white mt-6 mb-6 mx-4 ">
+                <h1 class="text-green-850 text-4xl font-bold text-center">“A lifestyle worth living” brands</h1>
+                <div class="grid grid-cols-6 mt-6 pb-6 ml-6">
+                    <img src="Assets/brand1.png" alt="">
+                    <img src="Assets/brand2.png" alt="">
+                    <img src="Assets/brand3.png" alt="">
+                    <img src="Assets/brand4.png" alt="">
+                    <img src="Assets/brand5.png" alt="">
+                    <img src="Assets/brand6.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--Brands Section-->
+
+        <!--footer-->
+        <section>
+            <div class="grid grid-cols-5 bg-green-850  pl-8 text-white pt-6 pb-6 mx-auto">
+                
+
+                <!--Online store-->
+                <div class="ml-4 pl-6 col-span-1">
+                   <h2 class="mb-2 text-lg font-semibold">ONLINE STORE</h2>
+                    <ul class="list-none list-inside">
+                        <li class="mb-2">
+                            <a href="#">Fridges & Freezers</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Beds</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Stoves</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Dining</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Lounge</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Kitchen</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Solar</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Gift Cards</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Buy on Lay By</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"> Zero Deposit Purchase</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Request for a Qoutation</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Online store ends-->
+                <!--Customer Service-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">CUSTOMER SERVICE</h2>
+                     <ul class="list-none list-inside ">
+                        <li class="mb-2">
+                             <a href="#">FAQ</a>
+                         </li>
+                         <li class="mb-2">
+                             <a href="#">Catalog</a>
+                         </li>
+                         <li class="mb-2">
+                             <a href="#">Deliveries</a>
+                         </li>
+                         
+                     </ul>
+                 </div>
+                <!--Customer Service ends-->
+
+                <!--policies-->
+                <div class="ml-4">
+                    <h2 class="mb-2 text-lg font-semibold">POLICIES</h2>
+                     <ul class="list-none list-inside ">
+                        <li class="mb-2">
+                             <a href="#">Credit T&Cs</a>
+                         </li>
+                         <li class="mb-2">
+                             <a href="#">LayBy T&cs</a>
+                         </li>
+                         <li class="mb-2">
+                             <a href="#"> Returns T&Cs</a>
+                         </li>
+                         <li class="mb-2">
+                             <a href="#">Repairs T&Cs</a>
+                         </li>
+                         <li class="mb-2">
+                             <a href="#">Deliveries T&Cs</a>
+                         </li>
+                         <li class="mb-2">
+                             <a href="#">General T&Cs</a>
+                         </li>
+                     </ul>
+                 </div>
+                <!--policies ends-->
+
+                <!--other links-->
+                <div class=" col-span-2 mr-4">
+                    <h2 class="mb-2 text-lg font-semibold">
+                        Sign up to our newsletter for updates 
+                        <br> on promotions and new products:
+                    </h2>
+
+                    <div class="ml-0 pl-0">
+                    <!--search Bar-->
+                        <form class="flex items-center max-w-sm ">   
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                                </div>
+                                <input type="text" id="simple-search" class="bg-white border border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5" placeholder="Email Address" required />
+                            </div>
+                        </form>
+                    <!--Search Bar end-->
+                    </div>
+                    <h2 class="mb-2 text-lg font-semibold mt-5">Follow us on Social Media</h2>
+                    
+                    <div class="grid grid-cols-12">
+                        <a href="#"><img class="p-1" src="Assets/facebook.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/instagram.png" alt=""></a>
+                        <a href="#"><img class="p-1" src="Assets/linkedin.png" alt=""></a>
+                    </div>
+
+                    <h2 class="mb-2 text-lg font-semibold mt-5">WE ACCEPT:</h2>
+                    <div class="grid grid-cols-5">
+                        <a href="#"><img  src="Assets/visa.png" alt=""></a>
+                        <a href="#"><img class="pt-4 mx-2" src="Assets/Mastercard.png" alt=""></a>
+                        <a href="#"><img class="pt-7" src="Assets/innnbucks.png" alt=""></a>
+                    </div>
+                    <div class="grid grid-cols-4 ">
+                        <a href="#"><img src="Assets/ecocash.png" alt=""></a>
+                        <a href="#"><img src="Assets/zipit.png" alt=""></a>
+                    </div>
+                    
+                 </div>
+                <!--other links ends-->
+
+            </div>
+        </section>
+
+        <!--footer ends-->
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+</body>
+   
+</html>
